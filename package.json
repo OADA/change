@@ -1,0 +1,27 @@
+{
+  "name": "@oada/change",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.test.ts",
+    "build": "tsc",
+    "prettier": "prettier --write '{lib,test}/**/*.ts'"
+  },
+  "author": "Tomohiro Arakawa <tomohiro@tarakawa.net>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "typescript": "^4.2.3"
+  }
+}
