@@ -1,1 +1,1 @@
-export { applyChange, generateChange } from "./core";
+export { patch, diff } from "./core";
