@@ -1,7 +1,8 @@
 {
   "name": "@oada/change",
   "version": "0.1.0",
-  "description": "",
+  "description": "An implementation of OADA Change",
+  "repository": "https://github.com/OADA/change",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",
   "files": [
