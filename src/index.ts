@@ -1,1 +1,1 @@
-export { patch, diff } from "./core";
+export { patch, diff, listDeletePaths } from "./core";

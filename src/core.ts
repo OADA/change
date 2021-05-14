@@ -79,3 +79,22 @@ export function diff(document1: Document, document2: Document): Change {
   // That's all
   return change;
 }
+
+export function listDeletePaths(
+  change: Change,
+  pathPrefix: string = ""
+): Array<string> {
+  if (change._delete === true) {
+    return [pathPrefix + "/"];
+  } else {
+    let deletePaths: Array<string> = [];
+    for (const key in change) {
+      if (utils.isObject(change[key])) {
+        deletePaths = deletePaths.concat(
+          listDeletePaths(change[key], pathPrefix + "/" + key)
+        );
+      }
+    }
+    return deletePaths;
+  }
+}
