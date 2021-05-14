@@ -1,6 +1,6 @@
 {
   "name": "@oada/change",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An implementation of OADA Change",
   "repository": "https://github.com/OADA/change",
   "main": "dist/index.ts",
@@ -15,12 +15,11 @@
   },
   "author": "Tomohiro Arakawa <tomohiro@tarakawa.net>",
   "license": "Apache-2.0",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
-    "ts-node": "^9.1.1"
-  },
-  "devDependencies": {
+    "ts-node": "^9.1.1",
     "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.1",
     "typescript": "^4.2.3"
