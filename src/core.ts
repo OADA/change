@@ -9,6 +9,7 @@ interface Change {
 }
 
 export function patch(document: Document, change: Change): Document {
+  // TODO: validate change document
   // If "_detele" is given, start a new document to replace contents
   if (change._delete === true) {
     document = {};
@@ -31,6 +32,9 @@ export function patch(document: Document, change: Change): Document {
       }
       // Case 2: recursively apply change
       else {
+        if (!document[key]) {
+          document[key] = {};
+        }
         document[key] = patch(document[key], change[key]);
       }
     }
