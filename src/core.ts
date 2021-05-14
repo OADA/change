@@ -71,7 +71,7 @@ export function diff(document1: Document, document2: Document): Change {
         change[key] = diff(document1[key], document2[key]);
       }
       // Otherwise, just copy the content to change
-      else {
+      else if (document1[key] !== document2[key]) {
         change[key] = document2[key];
       }
     }
